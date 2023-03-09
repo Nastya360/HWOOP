@@ -100,7 +100,6 @@ public class RadioTest {
     public void shouldIncreaseVolume() {
         Radio volume = new Radio();
         volume.currentVolume = 56;
-        ;
         int expected = 57;
         int actual = volume.increaseVolume();
         Assertions.assertEquals(expected, actual);
