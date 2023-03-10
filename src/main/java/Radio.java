@@ -3,10 +3,19 @@ public class Radio {
     private int currentRadioStation;
     private int currentVolume;
 
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
     }
+
+    public int setCurrentVolume(int newCurrentVolume) {
+        currentVolume = newCurrentVolume;
+        return currentVolume;
+    }
+
 
     public void setLastRadioStation() {
         currentRadioStation = 9;
