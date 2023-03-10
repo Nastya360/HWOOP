@@ -1,5 +1,4 @@
 public class Radio {
-
     public int currentRadioStation;
 
     public int getCurrentRadioStation() {
