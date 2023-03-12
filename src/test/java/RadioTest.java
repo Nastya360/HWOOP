@@ -33,11 +33,12 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+
     @Test
-    public void shouldSetLastRadioStation() {
-        Radio rStation = new Radio(25);
+    public void shouldSetLastRadioStationWithPersonalSettings() {
+        Radio rStation = new Radio(20);
         rStation.setLastRadioStation();
-        int expected = 25;
+        int expected = 19;
         int actual = rStation.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
 
@@ -84,6 +85,15 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+    // @Test
+    //  public void shouldSetQuantityRadioStationFromPersonalMenu(){
+    //       Radio rStation = new Radio(15);
+    //      rStation.se(15);
+    //      int expected = 14;
+    //      int actual = rStation.getQuantityRadioStation();
+    //      Assertions.assertEquals(expected, actual);
+
+    // }
 
     @Test
     public void shouldSetVolume() {
