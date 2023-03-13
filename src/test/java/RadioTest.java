@@ -85,15 +85,16 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
-    // @Test
-    //  public void shouldSetQuantityRadioStationFromPersonalMenu(){
-    //       Radio rStation = new Radio(15);
-    //      rStation.se(15);
-    //      int expected = 14;
-    //      int actual = rStation.getQuantityRadioStation();
-    //      Assertions.assertEquals(expected, actual);
 
-    // }
+    @Test
+    public void shouldSetNumberRadioStationFromPersonalMenu() {
+        Radio rStation = new Radio(20);
+        rStation.setCurrentRadioStation(15);
+        int expected = 15;
+        int actual = rStation.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+
+    }
 
     @Test
     public void shouldSetVolume() {
