@@ -8,6 +8,16 @@ public class Radio {
     private int minVolume = 0;
     private int quantityRadioStation = 10;
 
+    public Radio() {
+        quantityRadioStation = getQuantityRadioStation();
+    }
+
+
+    public Radio(int quantityRadioStation) {
+        this.quantityRadioStation = quantityRadioStation;
+    }
+
+
     public int getQuantityRadioStation() {
         return quantityRadioStation;
     }
@@ -20,21 +30,11 @@ public class Radio {
         return currentRadioStation;
     }
 
-    public Radio() {
-        quantityRadioStation = getQuantityRadioStation();
-    }
-
-
-    public Radio(int quantityRadioStation) {
-        this.quantityRadioStation = quantityRadioStation;
-    }
-
 
     public int setCurrentVolume(int newCurrentVolume) {
         currentVolume = newCurrentVolume;
         return currentVolume;
     }
-
 
     public void setLastRadioStation() {
         currentRadioStation = quantityRadioStation - 1;
